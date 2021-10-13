@@ -71,7 +71,7 @@ in a script tag on your main HTML page and point the AJAX calls from the library
 
 The first step is creating your initial table. To do this simply
 
-var myNewTable = newTable([Object Location X],[Object Location Y],[Number of Rows] [Number of Columns], [Asynchronous]);
+#### var myNewTable = newTable([Object Location X],[Object Location Y],[Number of Rows] [Number of Columns], [Asynchronous]);
 Object Locations are a grid address for example : 0 or 3
 Number of Rows and Columns can be any number : 1 or 30
 Asynchronous can be set to true or false.
@@ -82,37 +82,37 @@ myNewTable.createTable()
 once the table is created you can send the following commands to manipulate
 the object or matrix
 
-myNewTable.tableNumTemp
+#### myNewTable.tableNumTemp
   Displays identifying number for the matrix you generated.
 
-myNewTable.rows
+#### myNewTable.rows
   Displays the number of rows in the matrix.
 
-myNewTable.columns
+#### myNewTable.columns
   Displays the number of columns in the matrix.
 
-myNewTable.grid
+#### myNewTable.grid
   Stores the data that makes up the original matrix.
 
-myNewTable.clockWiseRotate
+#### myNewTable.clockWiseRotate
   Rotates the entire matrix data clockwise.
 
-myNewTable.counterClockWiseRotate
+#### myNewTable.counterClockWiseRotate
   Rotates the entire matrix data counter clockwise.
 
-myNewTable.tablePieceMoveForward
+#### myNewTable.tablePieceMoveForward
   Moves the object one space forward.
 
-myNewTable.tablePieceMoveBackward
+#### myNewTable.tablePieceMoveBackward
   Moves the object one space backwards.
 
-myNewTable.tablePieceFaceClockWise
+#### myNewTable.tablePieceFaceClockWise
   Faces the object 90degrees clockwise.
 
-myNewTable.tablePieceFaceCounterClockWise
+#### myNewTable.tablePieceFaceCounterClockWise
   Face the object 90degrees counter clockwise.
 
-myNewTable.restartTable
+#### myNewTable.restartTable
   Resets the table to it's initial settings. The matrix will rotate back
   to its original settings and the object will return to its initial location
   facing up.
@@ -123,27 +123,28 @@ globalTables object.
 
 to access this use the following globalTables.tableConst[tableNumTemp()]
 
-globalTables[0] for example
+#### globalTables[0] 
+  for example
 
 The object has the following properties which are updated after every function:
 
-globalTables.tableConst[x].grid
+#### globalTables.tableConst[x].grid
   Stores the current matrix data, including after rotations.
 
-globalTables.tableConst[x].objLocation
+#### globalTables.tableConst[x].objLocation
   Stores the current location of the object.
 
-globalTables.tableConst[x].facing
+#### globalTables.tableConst[x].facing
   Stores the current facing of the object. 0 = up , 1 = right , 2 = down , 3 = left
 
-globalTables.tableConst[x].tableFacing
+#### globalTables.tableConst[x].tableFacing
   Stores the current facing of the entire table matrix. 0 = up , 1 = right , 2 = down , 3 = left
 
-globalTables.tableConst[x].xLengthMax
+#### globalTables.tableConst[x].xLengthMax
   Stores the current number of rows in the matrix.
 
-globalTables.tableConst[x].yLengthMax
+#### globalTables.tableConst[x].yLengthMax
   Stores the current number of columns in the matrix.
 
-globalTables.tableConst[x].tableFailed
+#### globalTables.tableConst[x].tableFailed
   Stores whether or not the object has gone off the edge of the table.
