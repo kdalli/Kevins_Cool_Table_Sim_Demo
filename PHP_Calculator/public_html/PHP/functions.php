@@ -143,11 +143,11 @@ function moveF($facing, $location, $tFacing, $xMax, $yMax)
 }
 }
 //check to see if any values excede table limits
-if ($location[0] == -1 || $location[0] > $xMax){
+if ($location[0] == -1 || $location[0] > $xMax - 1){
   $location[0] = -1;
   $location[1] = -1;
 };
-if ($location[1] == -1 || $location[1] > $yMax){
+if ($location[1] == -1 || $location[1] > $yMax - 1){
   $location[0] = -1;
   $location[1] = -1;
 };
