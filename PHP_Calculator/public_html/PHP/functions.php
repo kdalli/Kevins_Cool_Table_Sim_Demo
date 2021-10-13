@@ -153,7 +153,7 @@ if ($location[1] == -1 || $location[1] > $yMax){
 };
 $location = strval($location[0]) . "_" . strval($location[1]); //rebuild string
   $json = $location;
-  $json = json_encode($json); // prepare data to send 
+  $json = json_encode($json); // prepare data to send
 
  return $json;
 };
@@ -205,11 +205,11 @@ function moveB($facing, $location, $tFacing, $xMax, $yMax)
 }
 }
 
-if ($location[0] == -1 || $location[0] > $xMax){
+if ($location[0] == -1 || $location[0] > $xMax - 1){
   $location[0] = -1;
   $location[1] = -1;
 };
-if ($location[1] == -1 || $location[1] > $yMax){
+if ($location[1] == -1 || $location[1] > $yMax - 1){
   $location[0] = -1;
   $location[1] = -1;
 };
