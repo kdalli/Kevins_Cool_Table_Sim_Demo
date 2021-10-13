@@ -4,7 +4,6 @@ A small demonstration of a table matrix and table 'object' library and its ascoc
 # Kevin's cool object and grid table simulator
 This project is a demo project that showcases a variety of my coding knowledge.
 It could have been done easier with less technologies but as it is a demo extra steps were taken.
-This project took approximately 26 hours not including documentation and a small amount of research.
 More time can be spent on the user interface but the intention was to show functionality and demonstrate
 the successful use of various technologies.
 
